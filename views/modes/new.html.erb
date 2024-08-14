@@ -1,0 +1,11 @@
+<section>
+  <div class="modes">
+    <h1><%= t('new_mode') %> </h1>
+    <div class="page__top">
+      <%= button_to(t("back"), modes_path, method: :get, class: "btn btn-primary back__btn") %>
+    </div>
+  </div>
+  <div class="modes__list">
+    <%= render partial: "form", locals: { mode: @mode } %>
+  </div>
+</section>
